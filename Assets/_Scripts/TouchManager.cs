@@ -24,11 +24,6 @@ public class TouchManager : MonoBehaviour
             {
                  _gameObject = hit.transform.gameObject;
                 
-                
-
-                Debug.Log(_gameObject.transform.position);
-                Debug.Log(hit.transform.position+"hit transform");
-                Debug.Log(hit.point+"hit point");
 
                 _mouseOffset = hit.transform.localPosition-hit.point;
                
@@ -46,6 +41,7 @@ public class TouchManager : MonoBehaviour
         }
         else if(Input.GetMouseButtonUp(0)&&_gameObject)
         {
+            
             _gameObject = null;
             _rigidbody.useGravity = true;
         }

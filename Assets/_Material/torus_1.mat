@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: torus
+  m_Name: torus_1
   m_Shader: {fileID: -6465566751694194690, guid: c4b1481b724a5b543b7f27fcb1e63a06,
     type: 3}
   m_ShaderKeywords: 
@@ -78,7 +78,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_2757D2B3: 1.14
+    - Vector1_2757D2B3: 1.22
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -105,8 +105,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_3B0B2EA9: {r: 0.7924528, g: 0.26165897, b: 0.26165897, a: 0}
-    - Color_815F2088: {r: 1.9843137, g: 0.22745098, b: 0.22745098, a: 0}
+    - Color_3B0B2EA9: {r: 0.8113208, g: 0.7120684, b: 0.14159843, a: 0}
+    - Color_815F2088: {r: 2.6492145, g: 2.1785715, b: 0.1124666, a: 0}
     - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

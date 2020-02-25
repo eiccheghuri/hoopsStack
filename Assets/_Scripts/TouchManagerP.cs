@@ -54,6 +54,7 @@ public class TouchManagerP : MonoBehaviour
         else if(Input.GetMouseButtonUp(0)&&_gameObject)
         {
             _gameObject = null;
+            
             _rigidbody.useGravity = true;
         }
     }

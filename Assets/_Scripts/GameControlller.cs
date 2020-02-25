@@ -5,40 +5,24 @@ using UnityEngine;
 public class GameControlller : MonoBehaviour
 {
 
-    public GameObject _torus;
-    public Camera _camera;
+    public int numberOfBase;
+    public List<GameObject> _torus;
+    private int _numberOfTorus;
 
-
-    public void Start()
+    private void Start()
     {
-        
+        _numberOfTorus = _torus.Count;
+        SameColorTorus();
     }
 
-    public void Update()
+    public void SameColorTorus()
     {
-        
-
-
-
-    }
-
-    public void TouchMethod()
-    {
-        if (Input.touchCount > 0)
+        for (int i = 0; i < _torus.Count; i++)
         {
-            Touch touch = Input.GetTouch(0); // get first touch since touch count is greater than zero
-
-            if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
-            {
-                // get the touch position from the screen touch to world point
-                Vector3 touchedPos = _camera.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, 10));
-                // lerp and set the position of the current object to that of the touch, but smoothly over time.
-                transform.position = Vector3.Lerp(transform.position, touchedPos, Time.deltaTime);
-            }
+            string material_name = _torus[i].GetComponentInChildren<MeshRenderer>().material.name;
+            
         }
     }
-
-
 
 
 
