@@ -23,6 +23,16 @@ public class myTouch : MonoBehaviour
 
     }
 
+    public void OnMouseUp()
+    {
+        
+    }
+
+    public void GenerateRay()
+    {
+
+    }
+
 
 
 
