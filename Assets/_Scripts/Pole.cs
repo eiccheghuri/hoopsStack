@@ -8,10 +8,13 @@ public class Pole : MonoBehaviour
     public List<GameObject> _torus;
     public Transform _pipeTransform;
 
-    public void DeleateObjectFromList(int index)
+    public int index;
+    private string _currentMaterial="", _previousMaterial="";
+
+    public void DeleateObjectFromList()
     {
         _torus[index] = null;
-       // _torus.RemoveAt(index);
+       
     }
     public GameObject SelectingFirstObjectFromList()
     {
@@ -19,12 +22,63 @@ public class Pole : MonoBehaviour
         {
             if(_torus[i]!=null)
             {
+                index = i;
                 return _torus[i];
             }
            
 
         }
         return null;
+    }
+
+    public void InsertGameobjectInList(GameObject torusObject)
+    {
+
+        for (int i = _torus.Count-1; i >= 0; --i)
+        {
+            if(_torus[i]==null)
+            {
+                _torus[i]=torusObject;
+               
+                
+                return;
+            }
+        }
+
+
+    }
+
+   
+
+
+    public void GameOver()
+    {
+        for (int i = _torus.Count-1; i>=0; i--)
+        {
+            if(_torus[i]!=null)
+            {
+                 _currentMaterial=_torus[i].GetComponentInChildren<MeshRenderer>().material.name;
+            }
+            
+
+            if(_currentMaterial==_previousMaterial)
+            {
+                _previousMaterial = _currentMaterial;
+            }
+            
+        }
+
+
+        if(_previousMaterial==_currentMaterial || _previousMaterial=="" )
+        {
+            Debug.Log("Same Material On :" + gameObject.name);
+        }
+    }
+
+    IEnumerator willCheckForGameOver()
+    {
+        yield return new WaitForSeconds(3f);
+        GameOver();
     }
 
 

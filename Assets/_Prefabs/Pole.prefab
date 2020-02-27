@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7007492182648273055}
   - component: {fileID: 713497246523504643}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Pole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,6 +103,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   _pipeTransform: {fileID: 5626838801553218970}
+  index: 0
 --- !u!1001 &7007492182802609329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,7 +124,7 @@ PrefabInstance:
     - target: {fileID: 3398266156943323002, guid: ba61e1543f29ed74a934be0891f83e76,
         type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3398266156943323003, guid: ba61e1543f29ed74a934be0891f83e76,
         type: 3}
@@ -198,7 +199,7 @@ PrefabInstance:
     - target: {fileID: 3398266157276358934, guid: ba61e1543f29ed74a934be0891f83e76,
         type: 3}
       propertyPath: m_Layer
-      value: 12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3398266157276358935, guid: ba61e1543f29ed74a934be0891f83e76,
         type: 3}

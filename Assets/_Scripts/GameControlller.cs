@@ -15,6 +15,11 @@ public class GameControlller : MonoBehaviour
         SameColorTorus();
     }
 
+    private void Update()
+    {
+        
+    }
+
     public void SameColorTorus()
     {
         for (int i = 0; i < _torus.Count; i++)

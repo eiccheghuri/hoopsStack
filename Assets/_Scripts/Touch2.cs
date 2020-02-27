@@ -19,6 +19,7 @@ public class Touch2 : MonoBehaviour
 
     public void Update()
     {
+
         HookTouch();
 
 
@@ -33,16 +34,23 @@ public class Touch2 : MonoBehaviour
             if(Physics.Raycast(_mouseRay.origin,_mouseRay.direction,out _hit,_rayMaxDistance,_layerMask))
             {
                 _gameObject = _hit.transform.gameObject;
-               
+                
                 _selectedGameObject=_gameObject.GetComponentInParent<Pole>().SelectingFirstObjectFromList();
-                _gameObject.GetComponentInParent<Pole>().DeleateObjectFromList(0);
+               
+
+                if(_selectedGameObject==null)
+                {
+                    return;
+                }
+                _gameObject.GetComponentInParent<Pole>().DeleateObjectFromList();
                 
 
 
-                _selectedGameObject.transform.position = new Vector3(_selectedGameObject.transform.position.x,
-                    _selectedGameObject.transform.position.y+1f,_selectedGameObject.transform.position.z);
+                 _selectedGameObject.transform.position = new Vector3(_selectedGameObject.transform.position.x,
+                 _selectedGameObject.transform.position.y,_selectedGameObject.transform.position.z);
                  _rigidbody = _selectedGameObject.GetComponent<Rigidbody>();
                 _rigidbody.useGravity = false;
+                _mouseOffset = _selectedGameObject.transform.position - _hit.transform.position;
                  
             }
         }
@@ -53,11 +61,11 @@ public class Touch2 : MonoBehaviour
             RaycastHit _hit;
             if(Physics.Raycast(_mouseRay.origin,_mouseRay.direction,out _hit,_rayMaxDistance,_layerMask))
             {
-               _gameObject = _hit.transform.gameObject;
+                 _gameObject = _hit.transform.gameObject;
                 _selectedGameObject.transform.position = new Vector3(_gameObject.transform.position.x,_selectedGameObject.transform.position.y,_selectedGameObject.transform.position.z);
                 //_selectedGameObject.transform.position = _gameObject.GetComponentInParent<Pole>()._pipeTransform.position;
             }
-
+             _rigidbody.velocity = Vector3.zero;
             _rigidbody.useGravity = true;
             _selectedGameObject = null;
 
@@ -67,7 +75,10 @@ public class Touch2 : MonoBehaviour
         {
 
             Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            _selectedGameObject.transform.position = new Vector3(newPos.x ,newPos.y, 2.23f);
+
+            Vector3 finalPos = new Vector3(Mathf.Clamp(newPos.x+_mouseOffset.x,-2.27f,7),Mathf.Clamp(newPos.y + _mouseOffset.y,2f,3f),2.23f);
+
+            _selectedGameObject.transform.position = finalPos;
             
 
         }
@@ -75,6 +86,7 @@ public class Touch2 : MonoBehaviour
         {
 
             _selectedGameObject.GetComponent<torusScripts>().isFalling = true;
+            _rigidbody.velocity = Vector3.zero;
             _rigidbody.useGravity = true;
             
             _selectedGameObject = null;

@@ -5,16 +5,17 @@ using UnityEngine;
 public class torusScripts : MonoBehaviour
 {
 
-    public GameObject[] _poleList;
+    public GameObject[] _poleArray;
     private Vector3 _distance;
     private Rigidbody _rigidbody;
     public bool isFalling=false;
     private float _minDistance=0;
     private int _index;
+    
 
     private void Start()
     {
-        _poleList = GameObject.FindGameObjectsWithTag("base");
+        _poleArray = GameObject.FindGameObjectsWithTag("base");
         _rigidbody = GetComponent<Rigidbody>();
 
     }
@@ -23,9 +24,9 @@ public class torusScripts : MonoBehaviour
     {
         if(isFalling==true)
         {
-            for (int i = 0; i < _poleList.Length; i++)
+            for (int i = 0; i < _poleArray.Length; i++)
             {
-                float tempDistance = Vector3.Distance(transform.position,_poleList[i].transform.position);
+                float tempDistance = Vector3.Distance(transform.position,_poleArray[i].transform.position);
                 if(i==0)
                 {
                     _minDistance = tempDistance;
@@ -39,9 +40,13 @@ public class torusScripts : MonoBehaviour
 
                 
             }
-            transform.position = new Vector3(_poleList[_index].transform.position.x,transform.position.y,transform.position.z);
+            transform.position = new Vector3(_poleArray[_index].transform.position.x,transform.position.y,transform.position.z);
+            Pole _pole = _poleArray[_index].GetComponentInParent<Pole>();
+            _pole.InsertGameobjectInList(transform.gameObject);
+          
+             isFalling = false;
            
-            isFalling = false;
+           
         }
     }
 
