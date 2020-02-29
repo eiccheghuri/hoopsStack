@@ -274,7 +274,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: -4383610506898752914, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -293,17 +293,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.29
+      value: 2.2799978
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.07
+      value: -0.69
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.23
+      value: 2.2304113
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
@@ -364,7 +364,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: -3809187022890542839, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_Layer
@@ -374,7 +374,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: -3621246584821416429, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -424,17 +424,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: -1280319444579888113, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: -1114131196871648465, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: -1041727522481752256, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -465,6 +465,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: d370a286b878347479cbe70eba810eb9,
+        type: 3}
+      propertyPath: m_TagString
+      value: torus
+      objectReference: {fileID: 0}
     - target: {fileID: -828966672724949997, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -484,17 +489,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: -431259157387468764, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: 43407329575693874, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: 1335443279655346834, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_Layer
@@ -504,7 +509,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: 2288932743052062377, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_Layer
@@ -514,7 +519,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     - target: {fileID: 3335975045913516189, guid: d370a286b878347479cbe70eba810eb9,
         type: 3}
       propertyPath: m_Layer
@@ -579,7 +584,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4166a0c6b62d24428a26650080830b6, type: 2}
+      objectReference: {fileID: 2100000, guid: 063936398884f9c4fa945e930509d957, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d370a286b878347479cbe70eba810eb9, type: 3}
 --- !u!1 &7173271671056278644 stripped
